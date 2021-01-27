@@ -19,7 +19,7 @@ const obtenerUsuarios = async() =>{
         const {data:usuarios} = await resp.json();
         return usuarios;
     }catch(err){
-
+        throw err;
     }
 }
 
